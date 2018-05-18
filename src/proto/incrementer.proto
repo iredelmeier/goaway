@@ -1,0 +1,13 @@
+syntax = 'proto3';
+
+package goaway;
+
+service Incrementer {
+  rpc Increment (IncrementRequest) returns (IncrementReply) {}
+}
+
+message IncrementRequest { }
+
+message IncrementReply {
+  int64 count = 1;
+}

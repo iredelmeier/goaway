@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package goaway;
+
+service Decrementer {
+  rpc Decrement (DecrementRequest) returns (DecrementReply) {}
+}
+
+message DecrementRequest { }
+
+message DecrementReply {
+  int64 count = 1;
+}
